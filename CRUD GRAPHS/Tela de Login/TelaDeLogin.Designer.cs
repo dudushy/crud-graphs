@@ -30,6 +30,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.botaoFecharAcesso = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // botaoAcesso
@@ -90,6 +91,18 @@
             this.textBox2.Size = new System.Drawing.Size(165, 23);
             this.textBox2.TabIndex = 3;
             // 
+            // botaoFecharAcesso
+            // 
+            this.botaoFecharAcesso.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botaoFecharAcesso.BackgroundImage")));
+            this.botaoFecharAcesso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.botaoFecharAcesso.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.botaoFecharAcesso.Location = new System.Drawing.Point(411, 265);
+            this.botaoFecharAcesso.Name = "botaoFecharAcesso";
+            this.botaoFecharAcesso.Size = new System.Drawing.Size(74, 73);
+            this.botaoFecharAcesso.TabIndex = 4;
+            this.botaoFecharAcesso.UseVisualStyleBackColor = true;
+            this.botaoFecharAcesso.Click += new System.EventHandler(this.botaoFecharAcesso_Click);
+            // 
             // TelaDeLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -98,6 +111,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(823, 435);
+            this.Controls.Add(this.botaoFecharAcesso);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
@@ -106,6 +120,7 @@
             this.Controls.Add(this.botaoAcesso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TelaDeLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicial";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,5 +135,6 @@
         private Label label3;
         private TextBox textBox1;
         private TextBox textBox2;
+        private Button botaoFecharAcesso;
     }
 }
