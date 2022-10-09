@@ -8,24 +8,19 @@ namespace CRUD_GRAPHS {
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            //GraphicsPath formaRedonda = new GraphicsPath();
-            //formaRedonda.AddEllipse(0, 0, button1.Width, button1.Height);
-            //button1.Region = new Region(formaRedonda);
-
-            //if (textBox1.Text == "Natan" && textBox2.Text == "natanzunfrilli") {
-            //    MessageBox.Show("Feito com sucesso!");
-            //} else (textBox1.Text == "Sidney" && textBox2.Text == "1814"){
-            //    MessageBox.Show("Feito com sucesso!");
-            //} 
+            var telaPrincipal = new Form1();
 
             if (textBox1.Text == "Natan" && textBox2.Text == "natanzunfrilli") {
-                MessageBox.Show("Feito com sucesso!");
-                Close();
+                MessageBox.Show("Bem vindo, Natan.",
+                    "Feito com sucesso!");
+                //this.Visible = false
+                telaPrincipal.ShowDialog();
                 return;
             }
             if (textBox1.Text == "Sidney" && textBox2.Text == "1814") {
-                MessageBox.Show("Feito com sucesso!");
-                Close();
+                MessageBox.Show("Bem vindo, Sidney.",
+                    "Feito com sucesso!");
+                telaPrincipal.ShowDialog();
                 return;
             }
             MessageBox.Show("Dados Incorretos, verifique e tente novamente!");
@@ -34,6 +29,22 @@ namespace CRUD_GRAPHS {
 
         private void botaoFecharAcesso_Click(object sender, EventArgs e) {
             this.Close();
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e) {
+            textBox1.BackColor = Color.LightBlue;
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e) {
+            textBox1.BackColor = Color.White;
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e) {
+            textBox2.BackColor = Color.LightBlue;
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e) {
+            textBox2.BackColor = Color.White;
         }
     }
 }
