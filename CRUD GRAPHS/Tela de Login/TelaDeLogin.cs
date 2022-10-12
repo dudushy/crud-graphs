@@ -8,9 +8,9 @@ namespace CRUD_GRAPHS {
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            var telaPrincipal = new Form1();
+            var telaPrincipal = new TelaMenu();
 
-            if (textBox1.Text == "Natan" && textBox2.Text == "natanzunfrilli") {
+            if (textBox1.Text == "Natan" && textBox2.Text == "123") {
                 MessageBox.Show("Bem vindo, Natan.",
                     "Feito com sucesso!");
                 //this.Visible = false
